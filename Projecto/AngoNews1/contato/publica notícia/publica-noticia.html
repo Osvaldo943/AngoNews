@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Osvaldo de Sousa">
+        <meta name="" content="Tenha o conhecimento de Todas as notícias divulgadas ou situações...">
+        <link rel="stylesheet" href="csspublica-noticia.css">
+
+        <script>
+            function mensagem (){
+                alert("Muito obrigado por nos fornecer a sua notícia e aguarde por uma resposta, caso ela for verdadeira será publicada, senão for verdadeira acontecerá o contrário.");
+            }
+        </script>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+
+            <div class="cab image">
+                <img src="../../image/jornal.png" alt="jornal">
+                <h1>Jornal do dia</h1>
+            </div>
+           
+            <div id="menu">
+                <nav>    
+                    <ul>
+                        <li><a href="../../teste3.html">Home</a> </li>
+                        <li><a href="../../politca.html">Política</a></li>
+                        <li><a href="../../sociedade.html">Sociedade</a></li>
+                        <li><a href="../../desporto.html">Desporto</a></li>
+                        <li><a href="../../cultura.html">Cultura</a></li>
+                        <li><a href="../contato.html">Contato</a></li>
+                    </ul>
+                  
+                </nav> 
+            </div>  
+            <details>
+                <summary>Mais</summary>
+                <ul> 
+                    <li><a href="../../economia.html">Economia</a></li>
+                    <li><a href="../../tecnologia.html">Tecnologia</a></li>
+                    <li><a href="../../fama.html">Fama</a></li>
+                    <li><a href="../../mundo.html">Mundo</a></li>
+                </ul>
+            </details>
+               
+            </div>  
+        </header>
+
+        <section>
+          <h2>Publique uma notícia</h2>
+            
+          <div id="publica"> 
+              <article class="pessoal parte1">
+                  <form action="">
+                    <h3>Dados pessoais</h3>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="digite o seu nome" required/>
+
+                    <label for="email">email:</label>
+                    <input type="email" name="email" placeholder="digite o seu email" />
+
+                    <label for="face">Facebook:</label>
+                    <input type="text" name="face" placeholder="digite o seu facebook" required/>
+
+                </form>
+              </article>
+
+              <article class="noticia parte2">
+                <h3>Escreva a sua notícia</h3>
+                  <a href="mensagem()"></a><form action="">
+                        <label for="categoria">CATEGORIA:</label>
+                        <select name="categoria" id="" required>
+                            <option value="Geral">GERAL</option>
+                            <option value="Política">POLÍTICA</option>
+                            <option value="Sociedade">SOCIEDADE</option>
+                            <option value="Desporto">DESPORTO</option>
+                            <option value="Cultura">CULTURA</option>
+                            <option value="Economia">ECONOMIA</option>
+                            <option value="Tecnologia">TECNOLOGIA</option>
+                            <option value="Fama">FAMA</option>
+                            <option value="Mundo">MUNDO</option>
+                        </select>
+
+                        <label for="titulo">Tíutlo auxiliar:</label>
+                        <input type="text" name="titulo" required>
+
+                        <label for="lido">Conteúdo: </label>
+                        <textarea name="lido" id="lido" required></textarea>
+
+                        <label for="file">Imagens/Vídeos</label>
+                        <input type="file" name="file">
+
+                        <input type="date">
+                        <input id="botao" type="submit" value="Enviar" onclick="">
+                    </form>       
+              </article>
+          </div>
+        </section>
+
+        <footer>
+            <a id="levador" href="#menu"><img src="../../image/Levador.jpg" alt=""></a>
+            <h2>Jornal de Angola é uma página de notícias online</h2>
+
+            <div>
+                <p>+(244)923 974 926</p>
+                <p>JornaldeAngola@hotmail.com</p>
+            </div>
+            <p id="final">Copyright &copy; 2020 Jornal de Angola online</p>
+        </footer>
+    </body>
+</html>

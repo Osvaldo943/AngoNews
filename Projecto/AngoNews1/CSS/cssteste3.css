@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+/*RESET*/
+*{
+    margin: 0;
+}
+
+/*Corpo do site ou conteúdo geral*/
+body{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Cabeçalho*/
+#cabecalho {
+    background-color: rgb(173, 10, 10);
+    display: flex;
+}
+
+
+/*Imagem do cabeçalho*/
+#image {
+    display: inline;
+    display: flex;
+    justify-content: left;
+    margin-left: 7%;
+}
+.imagem {
+    height: 90%;
+    width: 19%;
+}
+
+#mapa {
+    height: 80%;
+    width: 12%;
+}
+
+#image  h1{
+    margin: 4% 0% auto 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-weight: 100;
+}
+
+/*Menu da lista do cabeçalho*/
+
+ #menu ul{
+    list-style: none;
+    display: flex;
+    margin: 5% 0% 5%;
+    justify-content: flex-end;
+}
+
+#menu li {
+    margin-right: 2%;
+    display: inline-block;
+}
+
+/*Mais categorias do menu*/
+
+/*Details*/
+
+details summary{
+    color: white;
+    background-color: rgba(112, 0, 0, 0.726);
+    padding: 1px 8px;
+    border-radius: 5px;
+    transition: background-color .4s;
+    cursor: pointer;
+    margin: 30% 10% 0px 0px;
+}
+
+details[open] summary{
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 1px 1px 10px black;
+    color: black;
+    padding: 11px 20px;
+    margin-top: -1px;
+    margin-top: 10%;
+}
+
+details summary:hover {
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 1px 1px 10px black;
+    color: black;
+    padding: 11px 20px;
+}
+
+/*Menu do datais*/
+
+details ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+details li {
+    justify-content: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+details a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(112, 0, 0, 0.726);
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background-color .4s;
+}
+
+
+details a:hover {
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 1px 1px 10px black;
+    color: black;
+    padding: 11px;
+}
+
+details[open] .imagem{
+    height: 20px;
+}
+
+/*Configuração dos links*/
+#menu a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(112, 0, 0, 0.726);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color .4s;
+}
+
+
+#menu a:hover {
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 1px 1px 10px black;
+    color: black;
+    padding: 13px;
+}
+/*Formulário do menu da lista*/
+
+form {
+    margin: 0px 0px 2% -4%;
+}
+
+input {
+    padding: 6px;
+    border-radius: 5px;
+    margin-right: 4px;
+}
+
+#a-ativado {
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 0px 0px 10px black;
+    color: black;
+    padding: 13px;
+}
+
+/*Página principal*/
+.principal1 {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    background: url(../image/Recuroso\ RDesignsINC\ \(64\).jpg) no-repeat;
+    background-size: cover;
+}
+
+.texto1{
+    width: 72%;
+    margin: auto;
+    padding: 8%;
+}
+
+.texto1 h2 {
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.texto1 p{
+    font-size: 26px;
+    margin-bottom: 1%;
+}
+
+/*Política*/
+.tema a {
+    text-decoration: none;
+}
+
+.tema{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 5% auto 10%;
+}
+
+.geral {
+    width: 80%;
+    margin: auto;
+    border: 0px solid white;
+    box-shadow: 0px 1px 1px black;
+    padding: 3%;
+}
+
+.tema h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 20%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    border-bottom: 2.5px solid rgb(255, 0, 0);
+}
+.politica-noticia {
+    width: 90%;
+    margin: 5% auto;
+    color: rgb(48, 47, 47);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    
+}
+
+#load {
+    width:15%;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    margin: 8% auto;
+}
+
+
+/*NOTÍCIA QUE TÊM RELAÇÃO A POLITICA*/
+
+.noticia {
+    width: 30%;
+}
+.noticia a{
+     color: red;
+     font-weight: 100;
+     margin: 3% auto;
+     transition: background-color .5s;
+ }
+.noticia a:hover {
+    color: rgb(148, 8, 3);
+    text-decoration: underline;
+}
+ .noticia img {
+     width: 100%;
+     margin: 0px auto 3%;
+     border: 0px solid black;
+
+ }
+
+ .noticia p{
+     text-align: justify;
+     color: rgb(90, 90, 90);
+     margin-top:4% ;
+ }
+
+ /*Formatação do Ver mais*/
+#saiba {
+    text-align: left;
+    margin: 5% 0px;
+}
+ #saiba-mais-pol {
+     color: rgba(255, 255, 255, 0.952);
+     background-color: rgb(0, 204, 255);
+     border: 1px solid black;
+     border-radius: 2px;
+     padding: 4px 8px;
+     font-size: 14px;
+     font-weight: 100;
+     transition: background-color .5s;
+ }
+
+ #saiba-mais-pol:hover{
+     background-color:  rgb(0, 83, 104);
+     font-size: 17px;
+ }
+
+ /* Link para Categoria*/
+.categoria a {
+ 
+    color: rgb(34, 34, 34);
+    background-color: rgba(231, 231, 231, 0.692);
+    border: 0px solid black;
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 100;
+    transition: background-color .5s;
+}
+
+.categoria a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color:  rgb(0, 83, 104);
+    font-size: 16.5px;
+}
+
+ /*Rodapé*/
+
+ footer{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 10, 10);
+    padding: 3% 3% 0%;
+ }
+
+ footer h2{
+     font-size: 20px;
+     font-weight: 100;
+     margin-bottom: 20px;
+ }
+
+ #final {
+     margin-top: 2%;
+     background-color: black;
+     padding: 10px;
+     margin: 2% -3.2% 0%;
+ }
+
+ #levador img{
+     width: 5%;
+     margin: -3% auto 1%;
+ }
+
+ #levador img:hover {
+     width: 6%;
+ }
+
+ 
+ /*RESPONSIVIDADE*/ 
+
+@media screen and (max-width:1000px) {
+
+    /*Cabeçalho*/
+    #cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    #image {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .imagem {
+        margin-top: 2%;
+        width: 12%;
+    }
+
+    #mapa {
+        display: none;
+    }
+
+    /*Menu da lista do cabeçalho*/
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu ul {
+        justify-content: center;
+        margin-bottom: 5px;
+        width: 100%;
+        margin:2% 0px;
+        margin-left: -6.8%;
+    }
+
+    #menu li a{
+        font-size: 12px;
+    }
+    /*Formulário do menu da lista*/
+
+    form {
+        width: 35%;
+        margin: 0% auto 2%;
+    }
+
+    /*details*/
+
+    details {
+        width: 80px;
+        margin-top: -6% ;
+    }
+
+    details[open] summary{
+        padding: 5px 10px;
+    }
+    details summary:hover {
+        padding:5px 10px;
+    }
+
+    details ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: -40px;
+    }
+    
+    details li {
+        margin-right: 8px;
+    }
+
+    /*Página principal*/
+    .texto1{
+        width: 80%;
+        margin: auto;
+        padding: 8%;
+    }
+
+    /*Cada linha de 3 notícias*/
+
+    .tema h2 {
+        font-size: 30px;
+    }
+    .geral {
+        width: 90%;
+    }
+    .politica-noticia {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .noticia {
+        width: 70%;
+        margin: 0% auto 5%;
+    }
+ }

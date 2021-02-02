@@ -1,0 +1,402 @@
+@charset "utf-8";
+
+/*RESET*/
+*{
+    margin: 0;
+}
+
+/*Corpo do site ou conteúdo geral*/
+body{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Cabeçalho*/
+.cabecalho {
+    background-color: rgb(173, 10, 10);
+    display: flex;
+}
+
+
+/*Imagem do cabeçalho*/
+.image {
+    display: flex;
+    justify-content: left;
+    margin-left:5%;
+}
+.image img {
+    height: 90%;
+    width: 19%;
+}
+
+.image  h1{
+    margin: 4% 0% auto 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-weight: 100;
+}
+
+/*Menu da lista do cabeçalho*/
+
+ #menu ul{
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    margin: 5% 0% 5% 0%;
+    justify-content: flex-end;
+}
+
+#menu li {
+    margin-right: 2%;
+}
+
+#menu a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(112, 0, 0, 0.726);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color .4s;
+}
+
+
+#menu a:hover {
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 1px 1px 10px black;
+    color: black;
+    padding: 13px;
+}
+
+
+/*menu ativado*/
+#a-ativado {
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 0px 0px 10px black;
+    color: black;
+    padding: 13px;
+}
+
+
+/*Configuração dos links*/
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 3px 3px 4px black;
+}
+
+/*Details*/
+
+details summary{
+    color: white;
+    background-color: rgba(112, 0, 0, 0.726);
+    padding: 1px 8px;
+    border-radius: 5px;
+    transition: background-color .4s;
+    cursor: pointer;
+    margin: 30% 10% 0px 0px;
+}
+
+details[open] summary{
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 1px 1px 10px black;
+    color: black;
+    padding: 11px 20px;
+    margin-top: -1px;
+    margin-top: 10%;
+}
+
+details summary:hover {
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 1px 1px 10px black;
+    color: black;
+    padding: 11px 20px;
+}
+
+/*Menu do datais*/
+
+details ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+details li {
+    justify-content: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+details a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(112, 0, 0, 0.726);
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background-color .4s;
+}
+
+
+details a:hover {
+    background: rgb(255, 0, 0);
+    border-right: 0px solid red;
+    box-shadow: 1px 1px 10px black;
+    color: black;
+    padding: 11px;
+}
+
+/*Quando o details estiver aberto*/
+details[open] .imagem{
+    height: 20px;
+}
+
+
+/*seção da página*/
+section {
+    width: 60%;
+    margin: 2% auto;
+    display: flex;
+    justify-content:center;
+}
+
+/*Formulário do envio da sms lista*/
+#formulario input {
+    padding: 10px 20px 10px 20px;
+    display: block;
+    margin-bottom: 5%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
+textarea {
+    padding: 10px 20px;
+    height: 130px;
+    width: 340px;
+    padding: 0px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+#formulario h2 {
+    text-align: left;
+    margin: 5% 0%;
+    font-weight: 200;
+    color: rgb(173, 10, 10);
+ }
+
+ #botao {
+     color: white;
+     background-color: rgb(255, 0, 0);
+     border-radius: 5px;
+     border: none;
+ }
+
+ #botao:hover {
+     width: 50%;
+     height: 50px;
+ }
+
+#publica input {
+    color: white;
+    font-size: 20px;
+    margin: 20% 0%;
+    text-align: center;
+    padding: 15px 90px;
+    background: rgb(255, 0, 0);
+    border-radius: 10px;
+    border: none;
+}
+
+#publica input:hover{
+    width: 110%;
+     height: 70px;
+}
+ /*Localização Mapa*/
+ 
+ #noticia-completa {
+    width:60%;
+    color: rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10%;
+ }
+
+ #imgtexto img {
+     width: 100%;
+     margin: auto;
+ }
+
+ #noticia-completa h2 {
+    text-align: left;
+    margin: 5% 0%;
+    font-weight: 200;
+    color: rgb(173, 10, 10);
+ }
+
+ /*Contato*/
+
+ #noticia-completa h3 {
+    color: rgb(173, 10, 10);
+    font-size: 30px;
+    font-weight: 300;
+    margin: 3% auto 1%
+ }
+
+ #noticia-completa p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-align: justify;
+ }
+
+
+ /*Logtipos que servem como link*/
+ #logolink {
+     width: 50%;
+     margin: 3% 0%;
+     display: flex;
+ }
+
+ #logolink a {
+     margin-right: 30px;
+ }
+
+ /*Rodapé*/
+
+ #levador img{
+    width: 5%;
+    margin: -3% auto 1%;
+}
+
+#levador img:hover {
+    width: 6%;
+}
+ footer{
+    clear: both;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 10, 10);
+    padding: 3% 3% 0%;
+ }
+
+ footer h2{
+     font-size: 20px;
+     font-weight: 100;
+     margin-bottom: 20px;
+ }
+
+ #final {
+     margin-top: 2%;
+     background-color: black;
+     padding: 10px;
+ }
+
+
+/*RESPONSIVIDADE*/
+
+
+@media screen and (max-width:1000px) {
+
+    /*Cabeçalho*/
+    .cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .image{
+        width: 50%;
+        margin: auto;
+    }
+    .imagem {
+        margin-top: 2%;
+        width: 12%;
+    }
+
+    /*seção  da página*/
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Menu da lista do cabeçalho*/
+
+    #menu ul {
+        justify-content: center;
+        margin-bottom: 5px;
+        width: 100%;
+        margin:2% 0px;
+        margin-left: -6.8%;
+    }
+
+    #menu li a{
+        font-size: 12px;
+    }
+    /*Formulário do menu da lista*/
+
+    /*details*/
+
+    details {
+        width: 80px;
+        margin-top: -2% ;
+    }
+
+    details[open] summary{
+        padding: 5px 10px;
+    }
+    details summary:hover {
+        padding:5px 10px;
+    }
+
+    details ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: -40px;
+    }
+    
+    details li {
+        margin-right: 8px;
+    }
+    /*Corpo das informações*/
+    
+    #noticia-completa {
+        width: 80%;
+        margin: 0% auto 5%;
+    }
+
+    #imgtexto img {
+        width: 100%;
+        margin: auto;
+    }
+
+    #noticia-completa h3 {
+        font-size: 20px;
+        font-weight: 200;
+        margin: 5% auto 1.5%
+    }
+
+    #noticia-completa p{
+        font-size: 15px;
+    }
+
+    /*ormulário*/
+
+    #formula {
+        width: 80%;
+        margin: auto;
+    }
+ }
